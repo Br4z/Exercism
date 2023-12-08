@@ -7,7 +7,13 @@
 
 /* --------------------------------- TASK 1 --------------------------------- */
 
-// Round down all provided student scores.
+/**
+ * Rounds down each element in a vector of double scores and returns a vector
+ * of truncated integer scores.
+ *
+ * @param student_scores The vector of double scores to be rounded down.
+ * @return The vector of truncated integer scores.
+ */
 std::vector <int> round_down_scores(std::vector <double> student_scores) {
 	std::vector <int> truncated_scores;
 
@@ -23,7 +29,13 @@ std::vector <int> round_down_scores(std::vector <double> student_scores) {
 
 /* --------------------------------- TASK 2 --------------------------------- */
 
-// Count the number of failing students out of the group provided.
+/**
+ * Counts the number of failed students based on their scores.
+ * A student is considered failed if their score is less than or equal to 40.
+ *
+ * @param student_scores The vector containing the scores of all students.
+ * @return The number of failed students.
+ */
 int count_failed_students(std::vector <int> student_scores) {
 	int failed_students{0};
 
@@ -36,8 +48,16 @@ int count_failed_students(std::vector <int> student_scores) {
 
 /* --------------------------------- TASK 3 --------------------------------- */
 
-// Determine how many of the provided student scores were 'the best' based on the provided threshold.
-std::vector <int> above_threshold(std::vector<int> student_scores, int threshold) {
+/**
+ * Determines the students were "the best" based on the provided threshold and
+ * their scores.
+ *
+ * @param student_scores The vector of student scores.
+ * @param threshold The threshold value to filter the scores.
+ * @return A vector containing scores that are above or equal to the threshold.
+ */
+
+std::vector <int> above_threshold(std::vector <int> student_scores, int threshold) {
 	std::vector <int> filtered_scores;
 
 	for (int i = 0; i < student_scores.size(); i++) {
@@ -51,7 +71,12 @@ std::vector <int> above_threshold(std::vector<int> student_scores, int threshold
 
 /* --------------------------------- TASK 4 --------------------------------- */
 
-// Create a list of grade thresholds based on the provided highest grade.
+/**
+ * Creates a list of grade thresholds based on the provided highest grade.
+ *
+ * @param highest_score The highest score in the class.
+ * @return A vector containing the grade thresholds.
+ */
 std::array <int, 4> letter_grades(int highest_score) {
 	int interval = (highest_score - 40) / 4;
 
@@ -65,7 +90,13 @@ std::array <int, 4> letter_grades(int highest_score) {
 
 /* --------------------------------- TASK 5 --------------------------------- */
 
-// Organize the student's rank, name, and grade information in ascending order.
+/**
+ * Organizes the student's rank, name, and grade information in ascending order.
+ *
+ * @param student_scores The vector containing the scores of all students.
+ * @param student_names The vector containing the names of all students.
+ * @return A vector containing the student's rank, name, and grade information
+ */
 std::vector <std::string> student_ranking(std::vector <int> student_scores, std::vector <std::string> student_names) {
 	std::vector <std::string> ranking;
 
@@ -80,7 +111,14 @@ std::vector <std::string> student_ranking(std::vector <int> student_scores, std:
 
 /* --------------------------------- TASK 6 --------------------------------- */
 
-// Create a string that contains the name of the first student to make a perfect score on the exam.
+/**
+ * Finds the student with a perfect score.
+ *
+ * @param student_scores A vector containing the scores of the students.
+ * @param student_names A vector containing the names of the students.
+ * @return The name of the student with a perfect score, or an empty string if
+ * no student has a perfect score.
+ */
 std::string perfect_score(std::vector <int> student_scores, std::vector <std::string> student_names) {
 	std::string best_student = "";
 

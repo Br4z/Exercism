@@ -7,32 +7,53 @@ const int billable_days = 22;
 
 /* --------------------------------- TASK 1 --------------------------------- */
 
-// daily_rate calculates the daily rate given an hourly rate.
+/**
+ * Calculates the daily rate based on the given hourly rate.
+ *
+ * @param hourly_rate The hourly rate of the freelancer.
+ * @return The calculated daily rate.
+ */
 double daily_rate(double hourly_rate) {
 	return hourly_rate * 8;
 }
 
 /* --------------------------------- TASK 2 --------------------------------- */
 
-// apply_discount calculates the price after a discount.
+/**
+ * Applies a discount to a given amount.
+ *
+ * @param before_discount The original amount before the discount.
+ * @param discount The discount percentage to be applied.
+ * @return The amount after applying the discount.
+ */
 double apply_discount(double before_discount, double discount) {
 	return before_discount * (1 - discount / 100);
 }
 
 /* --------------------------------- TASK 3 --------------------------------- */
 
-// monthly_rate calculates the monthly rate, given an hourly rate and a discount.
-// The returned monthly rate is rounded up to the nearest integer.
+/**
+ * Calculates the monthly rate for a freelancer based on the hourly rate and discount.
+ *
+ * @param hourly_rate The hourly rate of the freelancer.
+ * @param discount The discount to be applied to the monthly rate.
+ * @return The calculated monthly rate.
+ */
 int monthly_rate(double hourly_rate, double discount) {
 	return std::ceil(apply_discount(daily_rate(hourly_rate) * billable_days, discount));
 }
 
 /* --------------------------------- TASK 4 --------------------------------- */
 
-// days_in_budget calculates the number of workdays given a budget, hourly rate,
-// and discount
-// The returned number of days is rounded down (take the floor) to the next
-// integer.
+/**
+ * Calculates the number of days within the given budget, taking into account
+ * the hourly rate and discount.
+ *
+ * @param budget The total budget available.
+ * @param hourly_rate The hourly rate of the freelancer.
+ * @param discount The discount to be applied to the daily cost.
+ * @return The number of days within the budget.
+ */
 int days_in_budget(int budget, double hourly_rate, double discount) {
 	double daily_cost = apply_discount(daily_rate(hourly_rate), discount);
 

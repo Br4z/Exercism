@@ -2,33 +2,50 @@
 
 /* --------------------------------- TASK 1 --------------------------------- */
 
-// ovenTime returns the amount in minutes that the lasagna should stay in the
-// oven.
+/**
+ * Returns the oven time for cooking lasagna.
+ *
+ * @return The oven time in minutes.
+ */
 int ovenTime() {
 	return 40;
 }
 
 /* --------------------------------- TASK 2 --------------------------------- */
 
-// remainingOvenTime returns the remaining minutes based on the actual minutes
-// already in the oven.
-
+/**
+ * Calculates the remaining time in the oven for a lasagna based on the actual
+ * minutes it has been in the oven.
+ *
+ * @param actualMinutesInOven The actual minutes the lasagna has been in the oven.
+ * @return The remaining time in the oven for the lasagna.
+ */
 int remainingOvenTime(int actualMinutesInOven) {
 	return ovenTime() - actualMinutesInOven;
 }
 
 /* --------------------------------- TASK 3 --------------------------------- */
 
-// preparationTime returns an estimate of the preparation time based on the
-// number of layers and the necessary time per layer.
+/**
+ * Calculates the preparation time for making lasagna based on the number of
+ * layers. Each layer takes 2 minutes to prepare.
+ *
+ * @param numberOfLayers The number of layers in the lasagna.
+ * @return The total preparation time in minutes.
+ */
 int preparationTime(int numberOfLayers) {
 	return numberOfLayers * 2;
 }
 
 /* --------------------------------- TASK 4 --------------------------------- */
 
-// elapsedTime calculates the total time spent to create and bake the lasagna so
-// far.
+/**
+ * Calculates the total elapsed time for cooking lasagna.
+ *
+ * @param numberOfLayers The number of layers of lasagna.
+ * @param actualMinutesInOven The actual minutes the lasagna has been in the oven.
+ * @return The total elapsed time for cooking lasagna.
+ */
 int elapsedTime(int numberOfLayers, int actualMinutesInOven) {
 	return actualMinutesInOven + preparationTime(numberOfLayers);
 }

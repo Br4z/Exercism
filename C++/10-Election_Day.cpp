@@ -6,36 +6,46 @@
 
 namespace election {
 	struct ElectionResult {
-		std::string name{};
-		int votes{};
+		std::string name{}; // Name of the candidate
+		int votes{}; // Number of votes received by the candidate
 	};
 
 	/* --------------------------------- TASK 1 --------------------------------- */
 
-	// vote_count takes a reference to an 'ElectionResult' as an argument and will
-	// return the number of votes in the 'ElectionResult'.
+	/**
+	 * Returns the number of votes in the given ElectionResult.
+	 *
+	 * @param electionResult The ElectionResult to count votes from.
+	 * @return The number of votes in the ElectionResult.
+	 */
 	int vote_count(ElectionResult &electionResult) {
 		return electionResult.votes;
 	}
 
 	/* --------------------------------- TASK 2 --------------------------------- */
 
-	// increment_vote_count takes a reference to an 'ElectionResult' as an argument
-	// and a number of votes (int), and will increment the 'ElectionResult' by that
-	// number of votes.
+	/**
+	 * Increments the vote count of the given ElectionResult by the specified number
+	 * of votes.
+	 *
+	 * @param electionResult The ElectionResult to increment the vote count for.
+	 * @param votes The number of votes to increment by.
+	 */
 	void increment_vote_count(ElectionResult &electionResult, int votes) {
 		electionResult.votes += votes;
 	}
 
 	/* --------------------------------- TASK 3 --------------------------------- */
 
-	// determine_result receives the reference to a final_count and returns a
-	// reference to the 'ElectionResult' of the new president. It also changes the
-	// name of the winner by prefixing it with "President". The final count is given
-	// in the form of a 'reference' to 'std::vector <ElectionResult>', a vector with
-	// 'ElectionResults' of all the participating candidates.
-
-	ElectionResult& determine_result(std::vector<ElectionResult> &final_count) {
+	/**
+	 * Determines the result of the election based on the final count of
+	 * votes.
+	 *
+	 * @param final_count The final count of votes for all participating candidates.
+	 * @return A reference to the ElectionResult of the new president.
+	 * @details The name of the winner is changed by prefixing it with "President".
+	 */
+	ElectionResult& determine_result(std::vector <ElectionResult> &final_count) {
 		int winner_index = 0;
 
 		for (int i = 1; i < final_count.size(); i++) {
