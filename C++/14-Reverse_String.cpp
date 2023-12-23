@@ -1,7 +1,7 @@
 // URL: https://exercism.org/tracks/cpp/exercises/reverse-string DATE: 2023-12-08
 
-#include <string>
 #include <math.h>
+#include <string>
 
 
 namespace reverse_string {

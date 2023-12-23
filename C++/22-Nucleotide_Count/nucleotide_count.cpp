@@ -5,6 +5,14 @@
 #include <stdexcept>
 
 
+/**
+ * Counts the nucleotides in the given dna.
+ *
+ * The key of the map is a character representing a nucleotide (A, C, G, or T),
+ * and the value is an integer representing the count of that nucleotide.
+ *
+ * @return The map that stores the count of nucleotides.
+ */
 std::map <char, int> nucleotide_count::count(std::string dna) {
 	std::map <char, int> nucleotide_count;
 	nucleotide_count['A'] = 0;

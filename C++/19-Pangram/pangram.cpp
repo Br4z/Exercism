@@ -1,8 +1,8 @@
 // URL: https://exercism.org/tracks/cpp/exercises/pangram  DATE: 2023-12-09
 
-#include <cctype>
-#include <bitset>
 #include <algorithm>
+#include <bitset>
+#include <cctype>
 
 #include "pangram.h"
 
@@ -20,9 +20,7 @@ bool pangram::is_pangram(const std::string &sentence) {
 	std::bitset<26> alphabet;
 
 	for (char c : sentence) {
-		if (isalpha(c)) {
-			alphabet.set(tolower(c) - 'a');
-		}
+		if (isalpha(c)) alphabet.set(tolower(c) - 'a');
 	}
 
 	return alphabet.all();

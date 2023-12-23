@@ -23,9 +23,8 @@ unsigned long long grains::square(int square_number) {
 unsigned long long grains::total() {
 	unsigned long long total = 0;
 
-	for (int i = 1; i <= 64; i++) {
+	for (int i = 1; i <= 64; i++)
 		total += square(i);
-	}
 
 	return total; // (1ULL << 63) * 2 - 1;
 }

@@ -48,9 +48,8 @@ namespace election {
 	ElectionResult& determine_result(std::vector <ElectionResult> &final_count) {
 		int winner_index = 0;
 
-		for (int i = 1; i < final_count.size(); i++) {
+		for (int i = 1; i < final_count.size(); i++)
 			if (vote_count(final_count[i]) > vote_count(final_count[winner_index])) winner_index = i;
-		}
 
 		ElectionResult &winner = final_count[winner_index];
 

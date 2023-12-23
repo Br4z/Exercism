@@ -39,9 +39,8 @@ std::vector <int> round_down_scores(std::vector <double> student_scores) {
 int count_failed_students(std::vector <int> student_scores) {
 	int failed_students{0};
 
-	for (int i = 0; i < student_scores.size(); i++) {
+	for (int i = 0; i < student_scores.size(); i++)
 		if (student_scores[i] <= 40) failed_students++;
-	}
 
 	return failed_students;
 }
@@ -122,9 +121,8 @@ std::vector <std::string> student_ranking(std::vector <int> student_scores, std:
 std::string perfect_score(std::vector <int> student_scores, std::vector <std::string> student_names) {
 	std::string best_student = "";
 
-	for (int i = 0; i < student_scores.size(); i++) {
+	for (int i = 0; i < student_scores.size(); i++)
 		if (student_scores[i] == 100) { best_student = student_names[i]; break; }
-	}
 
 	return best_student;
 }
