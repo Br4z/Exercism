@@ -15,7 +15,8 @@
  */
 bool is_divisible(std::vector <int> &numbers, int number) {
 	for (int possible_divisor : numbers)
-		if (number % possible_divisor == 0) return true;
+		if (number % possible_divisor == 0)
+			return true;
 
 	return false;
 }
@@ -30,7 +31,9 @@ int nth_prime::nth(int position) {
 	std::vector <int> primes;
 
 	for (int i = 2; ; i++) {
-		if ((int) primes.size() == position) return primes.back();
-		if (!is_divisible(primes, i)) primes.push_back(i);
+		if ((int) primes.size() == position)
+			return primes.back();
+		if (!is_divisible(primes, i))
+			primes.push_back(i);
 	}
 }

@@ -11,6 +11,7 @@
  * The key of the map is a character representing a nucleotide (A, C, G, or T),
  * and the value is an integer representing the count of that nucleotide.
  *
+ * @param dna The dna sequence to be counted.
  * @return The map that stores the count of nucleotides.
  */
 std::map <char, int> nucleotide_count::count(std::string dna) {
@@ -21,17 +22,16 @@ std::map <char, int> nucleotide_count::count(std::string dna) {
 	nucleotide_count['T'] = 0;
 
 	for (int i = 0; i < (int) dna.length(); i++) {
-		if (dna[i] == 'A') {
+		if (dna[i] == 'A')
 			nucleotide_count['A']++;
-		} else if (dna[i] == 'C') {
+		else if (dna[i] == 'C')
 			nucleotide_count['C']++;
-		} else if (dna[i] == 'G') {
+		else if (dna[i] == 'G')
 			nucleotide_count['G']++;
-		} else if (dna[i] == 'T') {
+		else if (dna[i] == 'T')
 			nucleotide_count['T']++;
-		} else {
+		else
 			throw std::invalid_argument("Invalid nucleotide in strand");
-		}
 	}
 
 	return nucleotide_count;

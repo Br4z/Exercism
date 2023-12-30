@@ -30,8 +30,10 @@ namespace vehicle_purchase {
 	std::string choose_vehicle(std::string option1, std::string option2) {
 		std::string betterOption;
 
-		if (option2 > option1) betterOption = option1;
-		else betterOption = option2;
+		if (option2 > option1)
+			betterOption = option1;
+		else
+			betterOption = option2;
 
 		return betterOption + " is clearly the better choice.";
 	}
@@ -40,7 +42,7 @@ namespace vehicle_purchase {
 
 	/**
 	 * Calculates how much a vehicle can resell for at a certain age.
-	 * 
+	 *
 	 * @param original_price The original price of the vehicle.
 	 * @param age The age of the vehicle.
 	 * @return The resell price of the vehicle.
@@ -48,9 +50,12 @@ namespace vehicle_purchase {
 	double calculate_resell_price(double original_price, double age) {
 		double price = original_price;
 
-		if (age < 3) price *= 0.8;
-		else if (age < 10) price *= 0.7;
-		else price *= 0.5;
+		if (age < 3)
+			price *= 0.8;
+		else if (age < 10)
+			price *= 0.7;
+		else
+			price *= 0.5;
 
 		return price;
 	}

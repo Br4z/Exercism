@@ -17,14 +17,15 @@ void robot_name::robot::assign_name() {
 	std::string robot_name = "     ";
 
 	while (true) {
-		for (int i = 0; i < 2; i++) robot_name[i] = 'A' + rand() % 26;
-		for (int i = 2; i < 6; i++) robot_name[i] = '0' + rand() % 10;
+		for (int i = 0; i < 2; i++)
+			robot_name[i] = 'A' + rand() % 26;
+		for (int i = 2; i < 6; i++)
+			robot_name[i] = '0' + rand() % 10;
 
 		bool is_name_available = robot_name::robot::existing_names.find(robot_name) == robot_name::robot::existing_names.end();
 
-		if (is_name_available) {
+		if (is_name_available)
 			robot_name::robot::existing_names.emplace(robot_name); break;
-		}
 	}
 
 	this -> robot_name = robot_name;

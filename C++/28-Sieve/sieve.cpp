@@ -18,7 +18,8 @@ std::vector <int> sieve::primes(int n) {
 
 	for (int i = 0; i < (int) numbers.size(); i++)
 		for (int j = i + 1; j < (int) numbers.size(); j++)
-			if (numbers[j] % numbers[i] == 0) numbers.erase(numbers.begin() + j);
+			if (numbers[j] % numbers[i] == 0)
+				numbers.erase(numbers.begin() + j);
 
 	return numbers;
 }

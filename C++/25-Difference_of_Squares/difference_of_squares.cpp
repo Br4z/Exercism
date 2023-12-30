@@ -14,7 +14,8 @@
  * @throws std::domain_error if n is negative.
  */
 int difference_of_squares::square_of_sum(int n) {
-	if (n < 0) throw std::domain_error("Invalid input");
+	if (n < 0)
+		throw std::domain_error("Invalid input");
 
 	int sum = 0;
 
@@ -35,7 +36,8 @@ int difference_of_squares::square_of_sum(int n) {
  * @throws std::domain_error if the input is negative.
  */
 int difference_of_squares::sum_of_squares(int n) {
-	if (n < 0) throw std::domain_error("Invalid input");
+	if (n < 0)
+		throw std::domain_error("Invalid input");
 
 	int sum = 0;
 

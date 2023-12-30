@@ -9,7 +9,8 @@
 queen_attack::chess_board::chess_board(position_type white, position_type black) :
 	white_position(white), black_position(black) {
 
-	if (white == black) throw std::domain_error("Queen positions must be distinct!");
+	if (white == black)
+		throw std::domain_error("Queen positions must be distinct!");
 
 	if (white.first > board_size || white.first < 0 ||
 		white.second > board_size || white.second < 0 ||
@@ -70,8 +71,10 @@ std::string queen_attack::chess_board::get_string_representation() {
 	for (int i = 0; i < board_size; i++) {
 		std::string line = std::to_string(i) + " _ _ _ _ _ _ _ _\n";
 
-		if (i == white_position.first) line[white_position.second * 2] = 'W';
-		else if (i == black_position.first) line[black_position.second * 2] = 'B';
+		if (i == white_position.first)
+			line[white_position.second * 2] = 'W';
+		else if (i == black_position.first)
+			line[black_position.second * 2] = 'B';
 
 		board.append(line);
 	}

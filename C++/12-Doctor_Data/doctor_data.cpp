@@ -44,7 +44,8 @@ bool heaven::Vessel::shoot_buster() {
 		busters--;
 
 		return true;
-	} else return false;
+	} else
+		return false;
 }
 
 /**

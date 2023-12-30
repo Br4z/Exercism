@@ -40,7 +40,8 @@ int count_failed_students(std::vector <int> student_scores) {
 	int failed_students{0};
 
 	for (int i = 0; i < student_scores.size(); i++)
-		if (student_scores[i] <= 40) failed_students++;
+		if (student_scores[i] <= 40)
+			failed_students++;
 
 	return failed_students;
 }
@@ -62,7 +63,8 @@ std::vector <int> above_threshold(std::vector <int> student_scores, int threshol
 	for (int i = 0; i < student_scores.size(); i++) {
 		int score = student_scores[i];
 
-		if (score >= threshold) filtered_scores.emplace_back(score);
+		if (score >= threshold)
+			filtered_scores.emplace_back(score);
 	}
 
 	return filtered_scores;

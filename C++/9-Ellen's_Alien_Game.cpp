@@ -34,7 +34,8 @@ namespace targets {
 			 * @return true if the alien is still alive after being hit, false otherwise.
 			 */
 			bool hit() {
-				if (health > 0) health--;
+				if (health > 0)
+					health--;
 
 				return true;
 			}
@@ -70,7 +71,7 @@ namespace targets {
 
 			/**
 			 * Checks if there is a collision between the current alien and another alien.
-			 * 
+			 *
 			 * @param alien The alien to check for collision with.
 			 * @return True if there is a collision, false otherwise.
 			 */

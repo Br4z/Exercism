@@ -17,11 +17,11 @@
  * @return True if the sentence is a pangram, false otherwise.
  */
 bool pangram::is_pangram(const std::string &sentence) {
-	std::bitset<26> alphabet;
+	std::bitset <26> alphabet;
 
-	for (char c : sentence) {
-		if (isalpha(c)) alphabet.set(tolower(c) - 'a');
-	}
+	for (char c : sentence)
+		if (isalpha(c))
+			alphabet.set(tolower(c) - 'a');
 
 	return alphabet.all();
 }

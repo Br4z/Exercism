@@ -12,12 +12,11 @@
 std::vector <int> prime_factors::of(int n) {
 	std::vector <int> prime_factors;
 
-	for (int i = 2; n != 1; i++) {
+	for (int i = 2; n != 1; i++)
 		while (n % i == 0) {
 			prime_factors.push_back(i);
 			n /= i;
 		}
-	}
 
 	return prime_factors;
 }

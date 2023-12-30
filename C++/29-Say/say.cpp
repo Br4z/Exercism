@@ -15,7 +15,8 @@
  * @throws std::domain_error if he number is too large.
  */
 std::string say::number_to_english(int n) {
-	if (n >= 100) throw std::domain_error("The number is too large");
+	if (n >= 100)
+		throw std::domain_error("The number is too large");
 
 	switch (n) {
 		case  1: return "one";
@@ -61,7 +62,8 @@ std::string say::number_to_english(int n) {
  * @throws std::domain_error if the chunk is greater than 999.
  */
 std::string say::chunk_to_english(int n) {
-	if (n > 999) throw std::domain_error("The number is not a chunk");
+	if (n > 999)
+		throw std::domain_error("The number is not a chunk");
 
 	std::string translation;
 

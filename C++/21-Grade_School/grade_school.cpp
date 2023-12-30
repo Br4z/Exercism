@@ -12,9 +12,8 @@
  * @param position The starting position from where the names should be displaced.
  */
 // void displace_names_vector(std::vector <std::string> &names, int position) { // End to position
-// 	for (int i = names.size() - 1; i > position; i--) {
+// 	for (int i = names.size() - 1; i > position; i--)
 // 		names[i] = names[i - 1];
-// 	}
 // }
 
 /**
@@ -81,8 +80,8 @@ std::map <int, std::vector <std::string>> grade_school::school::roster() const {
  * @return The names of the people who got that grade in the school roaster.
  */
 std::vector <std::string> grade_school::school::grade(int grade) const {
-	if (school_roster.find(grade) == school_roster.end()) {
+	if (school_roster.find(grade) == school_roster.end())
 		return {};
-	}
+
 	return school_roster.at(grade);
 }

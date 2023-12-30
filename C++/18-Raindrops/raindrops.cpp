@@ -16,21 +16,17 @@
 std::string raindrops::convert(int number) {
 	std::string result = "";
 
-	if (number % 3 == 0) {
+	if (number % 3 == 0)
 		result += "Pling";
-	}
 
-	if (number % 5 == 0) {
+	if (number % 5 == 0)
 		result += "Plang";
-	}
 
-	if (number % 7 == 0) {
+	if (number % 7 == 0)
 		result += "Plong";
-	}
 
-	if (result == "") {
+	if (result == "")
 		result = std::to_string(number);
-	}
 
 	return result;
 }

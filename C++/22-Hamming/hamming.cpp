@@ -15,9 +15,8 @@
  * @throws std::domain_error if the strings are not of equal length.
  */
 int hamming::compute(std::string a, std::string b) {
-	if (a.length() != b.length()) {
+	if (a.length() != b.length())
 		throw std::domain_error("Strings must be of equal length");
-	}
 
 	int hamming_distance = 0;
 

@@ -9,10 +9,14 @@
  * @return The interest rate corresponding to the given balance.
  */
 double interest_rate(double balance) {
-	if (balance < 0) return 3.213;
-	else if (balance < 1000) return 0.5;
-	else if (balance < 5000) return 1.621;
-	else return 2.475;
+	if (balance < 0)
+		return 3.213;
+	else if (balance < 1000)
+		return 0.5;
+	else if (balance < 5000)
+		return 1.621;
+	else return
+		2.475;
 }
 
 /* --------------------------------- TASK 2 --------------------------------- */

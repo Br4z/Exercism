@@ -40,14 +40,12 @@ std::vector <std::string> secret_handshake::commands(int n) {
 	for (int i = 0; i < commands_number; i++) {
 		int result = 1 << i & n;
 
-		if (result) {
+		if (result)
 			commands.push_back(possible_commands[i]);
-		}
 	}
 
-	if (1 << (commands_number + 1) & n) { // Last command (10000) Reverse the order of the operations
+	if (1 << (commands_number + 1) & n) // Last command (10000) Reverse the order of the operations
 		reverse_string_vector(commands);
-	}
 
 	return commands;
 }
