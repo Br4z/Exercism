@@ -35,7 +35,7 @@ void displace_names_vector(std::vector <std::string> &names, int position) { // 
 }
 
 grade_school::school::school() {
-	school_roster = {};
+	school_roster = { };
 }
 
 grade_school::school::~school() {
@@ -81,7 +81,7 @@ std::map <int, std::vector <std::string>> grade_school::school::roster() const {
  */
 std::vector <std::string> grade_school::school::grade(int grade) const {
 	if (school_roster.find(grade) == school_roster.end())
-		return {};
+		return { };
 
 	return school_roster.at(grade);
 }

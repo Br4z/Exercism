@@ -37,7 +37,7 @@ std::vector <int> round_down_scores(std::vector <double> student_scores) {
  * @return The number of failed students.
  */
 int count_failed_students(std::vector <int> student_scores) {
-	int failed_students{0};
+	int failed_students{ 0 };
 
 	for (int i = 0; i < student_scores.size(); i++)
 		if (student_scores[i] <= 40)

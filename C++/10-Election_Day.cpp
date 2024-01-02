@@ -6,8 +6,8 @@
 
 namespace election {
 	struct ElectionResult {
-		std::string name{}; // Name of the candidate
-		int votes{}; // Number of votes received by the candidate
+		std::string name{ }; // Name of the candidate
+		int votes{ }; // Number of votes received by the candidate
 	};
 
 	/* --------------------------------- TASK 1 --------------------------------- */

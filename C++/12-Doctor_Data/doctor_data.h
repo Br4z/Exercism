@@ -19,8 +19,8 @@ namespace star_map {
 namespace heaven {
 	class Vessel {
 		public:
-			std::string name{};
-			int generation{};
+			std::string name{ };
+			int generation{ };
 			star_map::System current_system;
 			int busters = 0;
 
