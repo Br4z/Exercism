@@ -14,7 +14,7 @@
  * @return The raindrop string representation of the number.
  */
 std::string raindrops::convert(int number) {
-	std::string result = "";
+	std::string result;
 
 	if (number % 3 == 0)
 		result += "Pling";

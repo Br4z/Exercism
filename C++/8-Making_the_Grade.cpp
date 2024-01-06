@@ -121,7 +121,7 @@ std::vector <std::string> student_ranking(std::vector <int> student_scores, std:
  * no student has a perfect score.
  */
 std::string perfect_score(std::vector <int> student_scores, std::vector <std::string> student_names) {
-	std::string best_student = "";
+	std::string best_student;
 
 	for (int i = 0; i < student_scores.size(); i++)
 		if (student_scores[i] == 100) { best_student = student_names[i]; break; }

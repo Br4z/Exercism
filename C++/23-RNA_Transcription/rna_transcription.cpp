@@ -29,7 +29,7 @@ char rna_transcription::to_rna(char dna) {
  * @return The transcribed RNA sequence.
  */
 std::string rna_transcription::to_rna(std::string dna) {
-	std::string rna = "";
+	std::string rna;
 
 	for (char c : dna)
 		rna += to_rna(c);
