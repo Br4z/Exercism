@@ -7,10 +7,10 @@
 
 
 /**
- * Find the prime numbers between 2 and the number 'n'.
+ * Finds the prime numbers between 2 and the number "n".
  *
  * @param n The upper limit to search for prime numbers.
- * @return The vector containing the prime numbers from 2 to 'n' number.
+ * @return The vector containing the prime numbers from 2 to "n" number.
  */
 std::vector <int> sieve::primes(int n) {
 	std::vector <int> numbers(n - 1);

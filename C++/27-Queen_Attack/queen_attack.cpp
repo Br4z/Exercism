@@ -59,7 +59,7 @@ bool queen_attack::chess_board::can_attack() const {
  *
  * The string representation includes the positions of the white and black queens.
  * The board is represented as a grid of size 8x8, with each cell containing either
- * an empty space ('_'), the white queen ('W'), or the black queen ('B').
+ * an empty space (_), the white queen (W), or the black queen (B).
  *
  * @return The string representation of the chess board.
  */
