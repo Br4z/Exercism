@@ -67,18 +67,18 @@ std::string say::chunk_to_english(int n) {
 
 	std::string translation;
 
-	if (n >= 100) { // Thousands
+	if (n >= 100) { // Hundreds
 		translation += number_to_english(n / 100) + " hundred ";
 		n %= 100;
 	}
 
-	if (n > 20) { // Hundreds
+	if (n > 20) { // Tens and units
 		translation += number_to_english(n - n % 10);
 		n %= 10;
 		translation += n ? "-" : " ";
 	}
 
-	if (n > 0) // Tens
+	if (n > 0) // Tens and units
 		translation += number_to_english(n) + " ";
 
 	return translation;

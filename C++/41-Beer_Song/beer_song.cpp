@@ -16,12 +16,12 @@ std::string beer_song::verse(int verse) {
 		std::string current_bottles = std::to_string(verse);
 		std::string remaining_bottles = (verse - 1) ? std::to_string(verse - 1) : "no more";
 		std::string current_bottles_grammatical_number = std::string(" bottle") + (current_bottles != "1" ? "s" : "");
-		std::string bottles_possesive = (current_bottles != "1") ? "one" : "it";
+		std::string bottles_possessive = (current_bottles != "1") ? "one" : "it";
 		std::string remaining_bottles_grammatical_number = std::string(" bottle") + (remaining_bottles != "1" ? "s" : "");
 
 		verse_content = current_bottles + current_bottles_grammatical_number + " of beer on the wall, " +
 			current_bottles + current_bottles_grammatical_number + " of beer.\n"
-			"Take " + bottles_possesive + " down and pass it around, "
+			"Take " + bottles_possessive + " down and pass it around, "
 			+ remaining_bottles + remaining_bottles_grammatical_number + " of beer on the wall.\n";
 	} else
 		verse_content = "No more bottles of beer on the wall, no more bottles of beer.\n"
