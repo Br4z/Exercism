@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/roman_numerals DATE: 2024-01-15
+// URL: https://exercism.org/tracks/cpp/exercises/roman-numerals DATE: 2024-01-15
 
 #include <string>
 

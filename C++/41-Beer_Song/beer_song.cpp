@@ -46,7 +46,7 @@ std::string beer_song::sing(int start, int end) {
 		sing_content += verse(i);
 
 		if (i != end)
-			sing_content += "\n";
+			sing_content += '\n';
 	}
 
 	return sing_content;

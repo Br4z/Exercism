@@ -39,11 +39,11 @@ std::string food_chain::verse(int verse_number) {
 	std::string swallowed = animals[animal_index];
 
 	std::string verse =
-		"I know an old lady who swallowed a " + animals[animal_index] + "." + "\n" +
+		"I know an old lady who swallowed a " + animals[animal_index] + '.' + '\n' +
 		animals_intros[animal_index];
 
 	if (swallowed != "fly")
-		verse += "\n";
+		verse += '\n';
 
 	if (swallowed == "horse")
 		return verse;
@@ -78,7 +78,7 @@ std::string food_chain::verses(int start, int end) {
 	std::string verses;
 
 	for (int i = start; i <= end; i++)
-		verses += verse(i) + "\n";
+		verses += verse(i) + '\n';
 
 	return verses;
 }

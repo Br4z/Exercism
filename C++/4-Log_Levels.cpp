@@ -37,6 +37,6 @@ namespace log_line {
 	 * @return std::string The reformatted log line.
 	 */
 	std::string reformat(std::string log) {
-		return message(log) + " (" + log_level(log) + ")";
+		return message(log) + " (" + log_level(log) + ')';
 	}
 }

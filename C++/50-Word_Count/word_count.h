@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/word_count DATE: 2024-01-16
+// URL: https://exercism.org/tracks/cpp/exercises/word-count DATE: 2024-01-16
 
 #include <map>
 #include <string>

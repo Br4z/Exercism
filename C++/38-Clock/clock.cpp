@@ -45,7 +45,7 @@ date_independent::clock date_independent::clock::plus(int minutes) {
 date_independent::clock::operator std::string() const {
 	std::string result;
 
-	return (hour > 9 ? "" : "0") + std::to_string(hour) + ":" +
+	return (hour > 9 ? "" : "0") + std::to_string(hour) + ':' +
 		(minute > 9 ? "" : "0") + std::to_string(minute);
 }
 

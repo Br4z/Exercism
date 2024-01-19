@@ -75,11 +75,11 @@ std::string say::chunk_to_english(int n) {
 	if (n > 20) { // Tens and units
 		translation += number_to_english(n - n % 10);
 		n %= 10;
-		translation += n ? "-" : " ";
+		translation += n ? '-' : ' ';
 	}
 
 	if (n > 0) // Tens and units
-		translation += number_to_english(n) + " ";
+		translation += number_to_english(n) + ' ';
 
 	return translation;
 }

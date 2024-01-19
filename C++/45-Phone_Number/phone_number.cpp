@@ -48,17 +48,17 @@ std::string phone_number::phone_number::number() {
 }
 
 /**
- * Returns the phoe number area code.
+ * Returns the phone number area code.
  *
- * @return The phoe number area code.
+ * @return The phone number area code.
  */
 std::string phone_number::phone_number::area_code() {
 	return area_code_;
 }
 
 phone_number::phone_number::operator std::string() const {
-	std::string area_code = "(" + area_code_ + ")";
-	std::string number = number_.substr(3, 3) + "-" + number_.substr(6, 4);
+	std::string area_code = '(' + area_code_ + ')';
+	std::string number = number_.substr(3, 3) +'-' + number_.substr(6, 4);
 
-	return area_code + " " + number;
+	return area_code + ' ' + number;
 };
