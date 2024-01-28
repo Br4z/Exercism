@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/binarybinary DATE: 2024-01-26
+// URL: https://exercism.org/tracks/cpp/exercises/binary DATE: 2024-01-26
 
 #include <cmath>
 

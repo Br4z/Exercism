@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/etletl DATE: 2024-01-19
+// URL: https://exercism.org/tracks/cpp/exercises/etl DATE: 2024-01-19
 
 #include "etl.h"
 

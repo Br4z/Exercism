@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/anagramanagram DATE: 2024-01-21
+// URL: https://exercism.org/tracks/cpp/exercises/anagram DATE: 2024-01-21
 
 #include "anagram.h"
 

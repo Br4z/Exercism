@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/matching-bracketsmatching_brackets DATE: 2024-01-20
+// URL: https://exercism.org/tracks/cpp/exercises/matching-brackets DATE: 2024-01-20
 
 #include <stdexcept>
 #include <stack>

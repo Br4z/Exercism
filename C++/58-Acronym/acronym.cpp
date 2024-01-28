@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/acronymacronym DATE: 2024-01-24
+// URL: https://exercism.org/tracks/cpp/exercises/acronym DATE: 2024-01-24
 
 #include "acronym.h"
 

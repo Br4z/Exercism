@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/armstrong-numbersarmstrong_numbers DATE: 2024-01-25
+// URL: https://exercism.org/tracks/cpp/exercises/armstrong-numbers DATE: 2024-01-25
 
 #include <cmath>
 

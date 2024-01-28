@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/luhnluhn DATE: 2024-01-23
+// URL: https://exercism.org/tracks/cpp/exercises/luhn DATE: 2024-01-23
 
 #include "luhn.h"
 

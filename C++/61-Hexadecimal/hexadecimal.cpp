@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/hexadecimalhexadecimal DATE: 2024-01-26
+// URL: https://exercism.org/tracks/cpp/exercises/hexadecimal DATE: 2024-01-26
 
 #include <cmath>
 
