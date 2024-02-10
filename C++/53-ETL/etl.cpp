@@ -12,11 +12,11 @@
 std::map <char, int> etl::transform(std::map <int, std::vector <char>> old) {
 	std::map <char, int> result;
 
-	for (const auto &pair : old) { // std::pair <int, std::vector <char>>
+	for (const auto& pair : old) { // std::pair <int, std::vector <char>>
 		int points = pair.first;
 		std::vector <char> characteres = pair.second;
 
-		for (const char &character : characteres)
+		for (const char& character : characteres)
 			result[character | 32] = points;
 	}
 

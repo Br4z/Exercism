@@ -12,7 +12,7 @@
 std::string clean_dashes(std::string &string) {
 	std::string result;
 
-	for (const char &character : string)
+	for (const char& character : string)
 		if (character != '-')
 			result += character;
 

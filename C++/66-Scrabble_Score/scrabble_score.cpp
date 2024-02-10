@@ -41,7 +41,7 @@ std::map <std::vector <char>, int> scores{
  */
 template <typename T>
 bool includes(std::vector <T> vector, T element) {
-	for (const T &vector_element : vector)
+	for (const T& vector_element : vector)
 		if (vector_element == element)
 			return true;
 
@@ -58,8 +58,8 @@ int scrabble_score::score(std::string word) {
 	int sum = 0;
 	word = to_upper(word);
 
-	for (const char &letter : word)
-		for (const auto &score : scores)
+	for (const char& letter : word)
+		for (const auto& score : scores)
 			if (includes(score.first, letter))
 				sum += score.second;
 

@@ -79,7 +79,7 @@ char opening_character_pair(char &opening_character) {
 bool matching_brackets::check(std::string text) {
 	std::stack <char> stack;
 
-	for (char &character : text)
+	for (char& character : text)
 		if (is_opening_character(character))
 			stack.push(opening_character_pair(character));
 		else if (is_closing_character(character))

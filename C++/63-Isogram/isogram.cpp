@@ -28,7 +28,7 @@ bool isogram::is_isogram(std::string text) {
 	text = to_lower(text);
 	std::string letters = "";
 
-	for (char &character : text) {
+	for (char& character : text) {
 		if (character == ' ' || character == '-' || character == '_')
 			continue;
 		else if (letters.find(character) == std::string::npos)

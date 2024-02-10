@@ -28,7 +28,7 @@ bool anagram::anagram::is_anagram(std::string candidate) {
 	if (word == candidate || word.length() != candidate.length())
 		return false;
 
-	for (char &letter : word) {
+	for (char& letter : word) {
 		int index = candidate.find(letter);
 
 		if (index != std::string::npos)

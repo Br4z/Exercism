@@ -12,7 +12,7 @@
 std::string delete_spaces(std::string string) {
 	std::string result;
 
-	for (char &character : string)
+	for (char& character : string)
 		if (character != ' ')
 			result += character;
 

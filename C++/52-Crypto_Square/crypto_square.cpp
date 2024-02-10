@@ -29,7 +29,7 @@ crypto_square::cipher::cipher(std::string text) : text(text) {
 std::string crypto_square::cipher::normalize_plain_text() {
 	std::string result;
 
-	for (char &character : text)
+	for (char& character : text)
 		if (isalpha(character) || isalnum(character))
 			result += tolower(character);
 

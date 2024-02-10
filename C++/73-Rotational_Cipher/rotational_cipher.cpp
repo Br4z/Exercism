@@ -12,7 +12,7 @@
  * @return The rotated string.
  */
 std::string rotational_cipher::rotate(std::string input, int displacement) {
-	for (char &character : input)
+	for (char& character : input)
 		if (isalpha(character)) {
 			char base = isupper(character) ? 'A' : 'a';
 

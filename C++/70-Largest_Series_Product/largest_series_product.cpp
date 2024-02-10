@@ -73,7 +73,7 @@ int series_product(std::string series) {
 std::vector <int> series_products(std::vector <std::string> series_vector) {
 	std::vector <int> result;
 
-	for (const auto &series : series_vector)
+	for (const auto& series : series_vector)
 		result.push_back(series_product(series));
 
 	return result;
