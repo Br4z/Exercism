@@ -1,7 +1,7 @@
 // URL: https://exercism.org/tracks/cpp/exercises/high-scores DATE: 2024-02-20
 
 #include <algorithm>
-#include <functional.h>
+
 
 #include "high_scores.h"
 
