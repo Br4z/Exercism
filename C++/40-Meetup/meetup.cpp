@@ -16,7 +16,7 @@ meetup::scheduler::scheduler(int month, int year) : date(boost::gregorian::date(
  * @param start The starting day from which to begin the search.
  * @param day The desired day of the week (0 for Sunday, 1 for Monday, etc.).
  * @return The date of the first occurrence of the "day" in the month
- * "month" starting from the  "start".
+ * "month" starting from the "start".
  */
 boost::gregorian::date meetup::scheduler::found_date(int start, int day) const {
 	boost::gregorian::date date = this -> date + boost::gregorian::days(start - 1);

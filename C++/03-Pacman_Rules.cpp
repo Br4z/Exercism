@@ -52,6 +52,6 @@ bool lost(bool power_pellet_active, bool touching_ghost) {
  * @param touching_ghost Indicates whether the player is touching a ghost.
  * @return true if the player has won, false otherwise.
  */
-bool won(bool has_eaten_all_dots, bool power_pellet_active,  bool touching_ghost) {
+bool won(bool has_eaten_all_dots, bool power_pellet_active, bool touching_ghost) {
 	return has_eaten_all_dots && !lost(power_pellet_active, touching_ghost);
 }

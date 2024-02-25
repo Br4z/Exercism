@@ -29,7 +29,7 @@ allergies::allergy_test::~allergy_test() {
 /**
  * Checks if the person is allergic to a specific allergy .
  *
- * @param allergy The allergy  to check.
+ * @param allergy The allergy to check.
  * @return True if the person is allergic to the allergy, false otherwise.
  */
 bool allergies::allergy_test::is_allergic_to(std::string allergy) {

@@ -1,4 +1,4 @@
-// URL: https://exercism.org/tracks/cpp/exercises/pangram  DATE: 2023-12-09
+// URL: https://exercism.org/tracks/cpp/exercises/pangram DATE: 2023-12-09
 
 #include <algorithm>
 #include <bitset>

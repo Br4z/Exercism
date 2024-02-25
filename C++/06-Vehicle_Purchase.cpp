@@ -13,7 +13,7 @@ namespace vehicle_purchase {
 	 * @param kind The type of vehicle.
 	 * @return True if a license is needed, false otherwise.
 	 */
-	bool needs_license(std::string kind){
+	bool needs_license(std::string kind) {
 		return kind == "car" or kind == "truck";
 	}
 

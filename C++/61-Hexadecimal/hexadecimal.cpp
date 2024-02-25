@@ -11,7 +11,7 @@
  * @param number The hexadecimal input string.
  * @return The decimal equivalent of the hexadecimal number.
  */
-int hexadecimal::convert(std::string number){
+int hexadecimal::convert(std::string number) {
 	int number_length = number.length();
 	int result = 0;
 

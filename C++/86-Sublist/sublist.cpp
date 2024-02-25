@@ -64,6 +64,6 @@ sublist::List_comparison sublist::sublist(const std::vector <int> &list1, const 
 		else if (list2_size > list1_size && is_sublist(list2, list1)) // list1 might be a sublist of list2
 			return List_comparison::sublist;
 
-		return  List_comparison::unequal;
+		return List_comparison::unequal;
 	}
 }
